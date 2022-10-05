@@ -9,7 +9,7 @@ For M1 MacOS
 For many packages there are no versions available for the M1 chips. If you encounter this situation, you can install packages that were compiled for Intel chips instead. For this, you need to create the snakemake environment by setting appropriate flags. Snakemake will then automatically install packages that were designed for Intel. This occurs frequently, mainly with Bioconductor packages.
 
 .. note:: 
-    Be aware that the first time you load/execute packages from this conda environment it might seems like the execution is hanging. This is normal as the code is translated for your processor and subsequent executions will be faster.
+    Be aware that the first time you load/execute packages from this conda environment it might seem like the execution is stuck. This is normal as the code is translated for your processor and subsequent executions will be faster.
 
 .. code-block:: console
     
