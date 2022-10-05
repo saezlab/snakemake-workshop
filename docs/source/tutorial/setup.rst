@@ -32,6 +32,7 @@ Now that you have a conda environment with basically only snakemake installed, l
     cd snk-tutorial
 
 The project repository structure is shown below. Snakemake developers recommend a folder structure that separates the workflow from data, results and configurations files.
+
 .. note:: 
 
     This structure is a more lightweight version of the cookiecutter template provided by the snakemake workflows project. You can find how to setup your own project directory using a template :ref:`here <cookiecutter>`.
