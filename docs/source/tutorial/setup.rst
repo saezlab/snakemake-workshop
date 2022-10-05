@@ -59,7 +59,7 @@ The ``workflow`` folder contains a Snakefile, and several subfolders which conta
 Editing the Snakefile
 ---------------------
 
-You can use any text editor to edit snakemake code found in the Snakefile, which is just a mix of python code and yaml-like directives. I personnally use `VS Code<https://code.visualstudio.com>`_ with the `Snakemake language extension <https://marketplace.visualstudio.com/items?itemName=Snakemake.snakemake-lang>`_, whereas snakemake creators recommend using the `Atom editor <https://atom.io>`_. You can also use any IDE with python code highlighting such as Jupyterlab.
+You can use any text editor to edit snakemake code found in the Snakefile, which is just a mix of python code and yaml-like directives. I personally use `VS Code <https://code.visualstudio.com>`_ with the `Snakemake language extension <https://marketplace.visualstudio.com/items?itemName=Snakemake.snakemake-lang>`_, whereas snakemake creators recommend using the `Atom editor <https://atom.io>`_. You can also use any IDE with python code highlighting such as Jupyterlab.
 
 Let's now take a look at the Snakefile:
 
