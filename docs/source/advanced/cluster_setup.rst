@@ -94,6 +94,23 @@ When you run jobs on the cluster, all console output from snakemake will be redi
 
 Change the naming scheme as is most convenient to you, or to a dedicated slurm logs folder
 
+Change sbatch defaults
+----------------------
+You can change other sbatch behaviours by adding the approproate keywords to ``settings.json``. For example, you can exclude specific nodes from running your jobs by using the ``exclude`` slurm keyword:
+
+.. code-block:: json
+
+    {
+        "SBATCH_DEFAULTS": "exclude=cln[079,143],denbi4 job-name=smk-{rule}-{wildcards} output=logs/{rule}/{rule}-{wildcards}-%j.out",
+        "CLUSTER_NAME": "",
+        "CLUSTER_CONFIG": "",
+        "ADVANCED_ARGUMENT_CONVERSION": "no"
+    }
+
+This can be useful on the BioQuant cluster, since some nodes are sometimes faulty and cancel jobs, which unfortunately is not caught by snakemake.
+You can find a cheatsheet of sbatch commands `here <https://slurm.schedmd.com/pdfs/summary.pdf>`_.
+
+In general, it is still recommended to modify the sbatch defaults in the profile (``config.yaml``), since it has the advantage of being interpreted by the submission script.
 
 Rules with resources
 --------------------

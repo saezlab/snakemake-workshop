@@ -24,10 +24,11 @@ Contents
    tutorial/advanced
 
 .. toctree::
-   :caption: Cluster setup
+   :caption: Advanced options
    :name: basic
 
-   tutorial/cluster_setup
+   advanced/cluster_setup
+   advanced/environment_management
 
 .. toctree:: 
    :Caption: Other
