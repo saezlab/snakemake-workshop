@@ -14,10 +14,10 @@ Thankfully, it is relatively easy to integrate conda environments into Snakemake
 
 Installing conda
 ~~~~~~~~~~~~~~~~
-If you don't have conda installed yet, you can install it by following the instructions on the `conda website<https://conda.io/projects/conda/en/latest/user-guide/install/index.html>`_.
+If you don't have conda installed yet, you can install it by following the instructions on the `conda website <https://conda.io/projects/conda/en/latest/user-guide/install/index.html>`_.
 
-Alternatively, it is recommended to install `mamba<https://mamba.readthedocs.io/en/latest/installation.html>`_ instead, as it is more efficient in identifying and downloading relevant dependencies.
-You can install mamba by following the instructions on the `mamba website<https://mamba.readthedocs.io/en/latest/installation.html>`_, or you can also install the `mambaforge distribution<https://github.com/conda-forge/miniforge#mambaforge>`_.
+Alternatively, it is recommended to install `mamba <https://mamba.readthedocs.io/en/latest/installation.html>`_ instead, as it is more efficient in identifying and downloading relevant dependencies.
+You can install mamba by following the instructions on the `mamba website <https://mamba.readthedocs.io/en/latest/installation.html>`_, or you can also install the `mambaforge distribution <https://github.com/conda-forge/miniforge#mambaforge>`_.
 
 By default, snakemake will use mamba in the background if it is available.
 
@@ -65,7 +65,7 @@ The environment definition is a YAML file that lists which packages you want to 
 
 The ``name`` field specifies the name of the environment. Usually, conda will use this as an environment name. Snakemake actually ignores this field and replaces it with a hash of the file's contents in order to track any changes in the environment that could cause changes to the output of the workflow (Snakemake verions above 7.0).
 
-The ``channels`` field specifies which channels conda should use to look for packages. The order is important as long as conda is configured to use strict channel priorities. Snakemake will tell you if this is the case or not. Also see the section on `channel priorities tips and tricks<https://conda-forge.org/docs/user/tipsandtricks.html>`_.
+The ``channels`` field specifies which channels conda should use to look for packages. The order is important as long as conda is configured to use strict channel priorities. Snakemake will tell you if this is the case or not. Also see the section on `channel priorities tips and tricks <https://conda-forge.org/docs/user/tipsandtricks.html>`_.
 
 Then you can list the dependencies that you need. Most dependencies will be available from the ``conda-forge`` and ``bioconda`` channels. You can always check on anaconda.org if and on which channel a package is available. If you need a package that is not available on conda, you can also install it with ``pip`` (see the example above). 
 Python packages can be installed directly from github through pip. The example above shows you how to install the master branch or a specific commit of decoupler-py and pypath respectively.
